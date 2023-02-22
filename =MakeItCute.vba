@@ -10,5 +10,5 @@ End Function
 
 
 
-! =MakeItCute([@[Cell]]) 
-! sSpecChar = "REMOVE THESE CHARs"
+' =MakeItCute([@[Cell]]) 
+' sSpecChar = "REMOVE THESE CHARs"
