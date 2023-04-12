@@ -9,3 +9,4 @@ awk -v OFS=, '
         sub(/.csv$/, "", file)
         print file, $0
     }
+' *.csv > merged.csv
