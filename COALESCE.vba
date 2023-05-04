@@ -3,11 +3,11 @@ Public Function COALESCE(ParamArray Fields() As Variant) As Variant
     Dim v As Variant
     For Each v In Fields
         If "" & v <> "" Then
-            Coalesce = v
+            COALESCE = v
             Exit Function
         End If
     Next
-    Coalesce = "" 'desired default value if all cells are blank
+    COALESCE = "" 'desired default value if all cells are blank
 End Function
 ' ---------------------------------------------------------------------
 ' ---------------------------------------------------------------------
