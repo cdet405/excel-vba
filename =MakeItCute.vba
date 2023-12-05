@@ -1,14 +1,14 @@
 Function makeItCute(sInput As String) As String
-Dim sSpecChar As String
-Dim i As Long
-sSpecChar = "\/:*?™""®<>|&@#_+`©~;+=^$!"©°'â„¢â€Ã""
-For i = 1 To Len(sSpecChar)
-sInput = Replace$(sInput, Mid$(sSpecChar, i, 1), "")
-Next
-makeItCute = sInput
+   Dim regex As Object
+   Set regex = CreateObject("VBScript.RegExp")
+   With regex
+       .Global = True
+       .Pattern = "[^a-zA-Z0-9\s]"
+       makeItCute = .Replace(sInput, "")
+   End With
 End Function
 
 
 
-' =MakeItCute([@[Cell]]) 
-' sSpecChar = "REMOVE THESE CHARs"
+'USAGE:  =MakeItCute([@[Cell]]) 
+
