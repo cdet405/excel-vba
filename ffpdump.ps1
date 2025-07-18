@@ -1,5 +1,6 @@
 # dumps csv file: name, path, last modiefied timestamp for files matching critera in a target directory.
 # usage:  PS C:\Users\user1\Desktop> .\ffpdump.ps1 -SearchPath "C:\Users\user1\Downloads"
+# If scripts disabled run: Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 
 param (
     [string]$SearchPath = "."
